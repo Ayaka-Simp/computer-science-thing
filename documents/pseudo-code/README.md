@@ -3,13 +3,7 @@
 
 ### Create a list of all the heartbeats that are the following:
 `my_list = [55.00, 55.05, 56.00, 56.05, 57.00, 57.05]` etc.<br>
-### Create an float variable and set it to 0
-`float_var = 0.00`<br>
 
-### Loop through all the numbers in the list variable and add it to int_var
-`for i in my_list: float_var += i`<br>
-### Divide float_var by the length of the list
-`float_var /= length of my_list`<br>
 
 
 
