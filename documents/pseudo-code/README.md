@@ -24,9 +24,34 @@
 ### Define a function that calculates heart rate based on the lowest and the highest numbers.
 `def calc_heart_rate(a: float, b: float):`<br>
 `my_list = []`<br>
-`for i in range(a, b):`<br>
+`thing = list(range(a, b))`<br>
+`for i in thing:`<br>
+`if not str(i).endswith("5"):`<br>
+`my_list.remove(i)`<br>
+`elif not str(i).endswith("0"):`<br>
+`my_list.remove(i)`<br>
+`elif not str(i)[-2] == 0:`<br>
+`my_list.remove(i)`<br>
+`return my_list`<br>
 ### Define another function that automatically validates the inputs, and asks again if not valid.
 `def take_inputs_and_validate():`<br>
 `a, b = inputs()`<br>
 `if not validate_input(a, b): a, b = inputs()`<br>
 `else: return calc_heart_rate(a, b)`<br>
+### call take_inputs_and_validate and store in a variable
+`my_list = take_inputs_and_validate()`<br>
+### Print my_list joined with "\n"
+`print("\n".join(my_list))`<br>
+
+<h1 align=center>Problem 3</h1>
+<h2 align=center>Calculate the graphics of the heart rates of someone.</h2>
+
+### Take inputs with 10:00, 11:00, 12:00, 13:00, 14:00, 15:00 and 16:00 using a function.
+`def take_inputs():`
+`a = int(float(input("What is your heartbeat at 10:00? )))`
+`b = int(float(input("What is your heartbeat at 11:00? )))`
+`c = int(float(input("What is your heartbeat at 12:00? )))`
+`d = int(float(input("What is your heartbeat at 13:00? )))`
+`e = int(float(input("What is your heartbeat at 14:00? )))`
+`f = int(float(input("What is your heartbeat at 15:00? )))`
+`g = int(float(input("What is your heartbeat at 16:00? )))`
