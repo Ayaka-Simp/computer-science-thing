@@ -58,9 +58,7 @@ def validate_inputs(input_thing):
     else:
         return True
 
-# list_of_inputs = take_inputs()
-
-list_of_inputs = [[60, 75, 70.50, 73, 120.25, 150.00, 70], [60, 75, 70.50, 73, 120.25, 150.00, 70], [60, 75, 70.50, 73, 120.25, 150.00, 70], [60, 75, 70.50, 73, 120.25, 150.00, 70], [60, 75, 70.50, 73, 120.25, 150.00, 70]]
+list_of_inputs = take_inputs()
 
 pipes = []
 
